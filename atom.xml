@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Robin&#39;s Blog</title>
-  <icon>https://www.gravatar.com/avatar/b6d25db6a44c6ec21b7878be58abc6d7</icon>
+  
   
   <link href="/atom.xml" rel="self"/>
   
@@ -11,7 +11,7 @@
   
   <author>
     <name>Li Wenzhi</name>
-    <email>lwz7512@gmail.com</email>
+    
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
