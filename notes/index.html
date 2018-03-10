@@ -1,1 +1,181 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Quick Notes · Robin's Blog</title><meta name="description" content="Quick Notes - Li Wenzhi"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/wali-2.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://lwz7512.github.io/atom.xml" title="Robin's Blog"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/wali-2.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/works/" target="_self" class="nav-list-link">WORKS</a></li><li class="nav-list-item"><a href="/notes/" target="_self" class="nav-list-link active">QUICKNOTES</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Quick Notes</h1><div class="post-info">Mar 10, 2018</div><div class="post-content"></div></article></div></main><footer><div class="paginator"></div><div class="copyright"><p>© 2018 <a href="https://lwz7512.github.io">Li Wenzhi</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Quick Notes · Robin's Blog</title><meta name="description" content="Quick Notes - Li Wenzhi"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/wali-2.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://lwz7512.github.io/atom.xml" title="Robin's Blog"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/wali-2.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/works/" target="_self" class="nav-list-link">WORKS</a></li><li class="nav-list-item"><a href="/notes/" target="_self" class="nav-list-link active">QUICKNOTES</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Quick Notes</h1><div class="post-info">Mar 10, 2018</div><div class="post-content"><h1 id="What-did-you-learn-yesterday"><a href="#What-did-you-learn-yesterday" class="headerlink" title="What did you learn yesterday?"></a>What did you learn yesterday?</h1><h2 id="2017-12-26"><a href="#2017-12-26" class="headerlink" title="2017/12/26"></a>2017/12/26</h2><ul>
+<li>Reinstall windows10 home edition by usb iso:</li>
+</ul>
+<p><a href="http://joshbe" target="_blank" rel="noopener">http://joshbe</a>         am.com/2017/11/23/making-a-bootable-windows-10-usb-drive-on-macos-high-sierra/</p>
+<p>$ diskutil list<br>$ diskutil eraseDisk MS-DOS “WINDOWS10” MBR disk#<br>$ cp -rp /Volumes/CCCOMA_X64FRE_EN-US_DV9/* /Volumes/WINDOWS10/</p>
+<ul>
+<li>Reslove partition format problem during installation:</li>
+</ul>
+<p>press Shift+F10 to open dos window, then…</p>
+<ul>
+<li>Convert harddisk format from MBR to GPT in MS-Dos:</li>
+</ul>
+<blockquote>
+<p>diskpart<br>DISKPART &gt; list disk<br>DISKPART &gt; select disk 0<br>DISKPART &gt; clean<br>DISKPART &gt; convert gpt<br>DISKPART &gt; create partition primary size = 40960<br>DISKPART &gt; format fs=ntfs quick<br>DISKPART &gt; exit</p>
+</blockquote>
+<h2 id="2017-12-27"><a href="#2017-12-27" class="headerlink" title="2017/12/27"></a>2017/12/27</h2><ul>
+<li>verdaccio</li>
+</ul>
+<p>Lightweight private npm proxy registry</p>
+<p>$ npm install –global verdaccio<br>$ npm set registry <a href="http://localhost:4873" target="_blank" rel="noopener">http://localhost:4873</a><br>$ npm adduser –registry <a href="http://localhost:4873" target="_blank" rel="noopener">http://localhost:4873</a></p>
+<h2 id="2017-12-28"><a href="#2017-12-28" class="headerlink" title="2017/12/28"></a>2017/12/28</h2><ul>
+<li>Graceful degradation versus Progressive enhancement</li>
+</ul>
+<p><a href="https://www.w3.org/wiki/Graceful_degradation_versus_progressive_enhancement" target="_blank" rel="noopener">https://www.w3.org/wiki/Graceful_degradation_versus_progressive_enhancement</a></p>
+<p>development approaches</p>
+<p>Graceful degradation: alternative version to make sure the usability.<br>Progressive enhancement: improved version by usability basline.</p>
+<ul>
+<li>Difference:</li>
+</ul>
+<p>Gd start high, whereas Pe start extensive.<br>Gd try to fix, Pe try to pre-consideration.<br>Gd looking back, Pe looking forward.</p>
+<h2 id="2017-12-29"><a href="#2017-12-29" class="headerlink" title="2017/12/29"></a>2017/12/29</h2><h2 id="2017-12-30"><a href="#2017-12-30" class="headerlink" title="2017/12/30"></a>2017/12/30</h2><h2 id="2018-01-03"><a href="#2018-01-03" class="headerlink" title="2018/01/03"></a>2018/01/03</h2><ul>
+<li>Promise.resolve(value)</li>
+</ul>
+<p>returns a Promise object that is resolved with the given value.</p>
+<blockquote>
+<p>If the value is a thenable (i.e. has a “then” method), the returned promise will “follow” that thenable<br>if the value was a promise, that object becomes the result of the call to Promise.resolve;</p>
+</blockquote>
+<h2 id="…"><a href="#…" class="headerlink" title="…"></a>…</h2><h2 id="2018-01-05"><a href="#2018-01-05" class="headerlink" title="2018/01/05"></a>2018/01/05</h2><ul>
+<li>npm_lazy</li>
+</ul>
+<p><a href="http://mixu.net/npm_lazy/" target="_blank" rel="noopener">http://mixu.net/npm_lazy/</a></p>
+<p>npm can be slow, down or return random errors if you have large deploys<br>npm_lazy caches packages on your local network, making things faster and more predictable</p>
+<h2 id="2018-01-07"><a href="#2018-01-07" class="headerlink" title="2018/01/07"></a>2018/01/07</h2><ul>
+<li>mochajs</li>
+</ul>
+<p><a href="https://mochajs.org/#getting-started" target="_blank" rel="noopener">https://mochajs.org/#getting-started</a></p>
+<p>assert, describe(),<br>$ ./node_modules/mocha/bin/mocha</p>
+<p>test script in package.json</p>
+<p>“scripts”: {<br>    “test”: “mocha”<br>}</p>
+<p>run the test with:</p>
+<p>$ npm test</p>
+<h2 id="2018-01-08"><a href="#2018-01-08" class="headerlink" title="2018/01/08"></a>2018/01/08</h2><ul>
+<li>PRPL pattern</li>
+</ul>
+<p><a href="https://developers.google.com/web/fundamentals/performance/prpl-pattern/" target="_blank" rel="noopener">https://developers.google.com/web/fundamentals/performance/prpl-pattern/</a></p>
+<p>PRPL is a pattern for structuring and serving Progressive Web Apps (PWAs),<br>with an emphasis on the performance of app delivery and launch. It stands for:</p>
+<blockquote>
+<p>Push critical resources for the initial URL route.<br>Render initial route.<br>Pre-cache remaining routes.<br>Lazy-load and create remaining routes on demand.</p>
+</blockquote>
+<ul>
+<li><p>DEMO:<br><a href="https://shop.polymer-project.org/" target="_blank" rel="noopener">https://shop.polymer-project.org/</a></p>
+</li>
+<li><p>SOURCE:<br><a href="https://github.com/Polymer/shop" target="_blank" rel="noopener">https://github.com/Polymer/shop</a></p>
+</li>
+</ul>
+<h2 id="2018-01-09"><a href="#2018-01-09" class="headerlink" title="2018/01/09"></a>2018/01/09</h2><ul>
+<li><commit-ish></commit-ish></li>
+</ul>
+<p>Indicates a commit or tag object name.<br>A command that takes a <commit-ish> argument ultimately wants to operate on a <commit> object<br>but automatically dereferences <tag> objects that point at a <commit>.</commit></tag></commit></commit-ish></p>
+<h2 id="2018-01-10"><a href="#2018-01-10" class="headerlink" title="2018/01/10"></a>2018/01/10</h2><ul>
+<li>for…in vs for…of</li>
+</ul>
+<p>推荐在循环对象属性的时候，使用for…in,在遍历数组的时候的时候使用for…of。</p>
+<p>for…in循环出的是key，for…of循环出的是value</p>
+<p>注意，for…of是ES6新引入的特性。修复了ES5引入的for…in的不足</p>
+<p>for…of不能循环普通的对象，需要通过和Object.keys()搭配使用</p>
+<h2 id="2018-01-13"><a href="#2018-01-13" class="headerlink" title="2018/01/13"></a>2018/01/13</h2><p>the principles behind the CDN:</p>
+<p>CDN目的是通过在现有的Internet中增加一层新的网络架构，将网站的内容发布到最接近用户的网络“边缘”，<br>使用户可以就近取得所需的内容，解决 Internet 网络拥塞状况，提高用户访问网站的响应速度。<br>CDN是一种组合技术，其中包括源站、缓存服务器、智能DNS、客户端等几个重要部分。</p>
+<p>客户资源请求 –&gt; 智能DNS –&gt; 缓存服务器 &lt;– 源站</p>
+<p>A content delivery network or content distribution network (CDN) is a geographically distributed network<br> of proxy servers and their data centers. The goal is to distribute service spatially relative to<br> end-users to provide high availability and high performance.</p>
+<h2 id="2018-01-15"><a href="#2018-01-15" class="headerlink" title="2018/01/15"></a>2018/01/15</h2><ul>
+<li>hexo plugin development workflow</li>
+<li>hexo-admin plugin custom development workflow</li>
+<li>Meteor.js disable send enrollment email, and Meteorjs package structure</li>
+</ul>
+<h2 id="2018-01-16"><a href="#2018-01-16" class="headerlink" title="2018/01/16"></a>2018/01/16</h2><ul>
+<li>javascript source map</li>
+</ul>
+<p><a href="https://blog.rapid7.com/2017/05/24/what-are-javascript-source-maps/" target="_blank" rel="noopener">https://blog.rapid7.com/2017/05/24/what-are-javascript-source-maps/</a></p>
+<p>Source maps create a map from these compressed asset files back to the source files.<br>This source map allows you to debug and view the source code of your compressed assets,<br>as if you were actually working with the original CSS and Javascript source code.</p>
+<ul>
+<li>install tool:</li>
+</ul>
+<p>$ npm install uglify-js -g</p>
+<ul>
+<li>generate</li>
+</ul>
+<p>$ uglify-js file1.js file2.js -o output.js –source-map output.map.js</p>
+<ul>
+<li>bind()</li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind</a></p>
+<h2 id="2018-01-17"><a href="#2018-01-17" class="headerlink" title="2018/01/17"></a>2018/01/17</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function Welcome(props) &#123;</span><br><span class="line">  return &lt;h1&gt;Hello, &#123;props.name&#125;&lt;/h1&gt;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const element = &lt;Welcome name=&quot;Sara&quot; /&gt;;</span><br><span class="line">ReactDOM.render(</span><br><span class="line">  element,</span><br><span class="line">  document.getElementById(&apos;root&apos;)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<h2 id="2018-01-18"><a href="#2018-01-18" class="headerlink" title="2018/01/18"></a>2018/01/18</h2><ul>
+<li><p>TLS VS SSL ?</p>
+</li>
+<li><p>APNs push server needed port: 2695, 2696, 443</p>
+</li>
+<li><p>HTTP/2</p>
+</li>
+</ul>
+<p><a href="https://http2.github.io/" target="_blank" rel="noopener">https://http2.github.io/</a><br><a href="https://http2.github.io/faq/" target="_blank" rel="noopener">https://http2.github.io/faq/</a></p>
+<p>The focus of the protocol is on performance; specifically,<br>end-user perceived latency, network and server resource usage.<br>One major goal is to allow the use of a single connection from browsers to a Web site.</p>
+<ul>
+<li>What are the key differences to HTTP/1.x?</li>
+</ul>
+<p>At a high level, HTTP/2:</p>
+<ul>
+<li>is binary, instead of textual</li>
+<li>is fully multiplexed, instead of ordered and blocking</li>
+<li>can therefore use one connection for parallelism</li>
+<li>uses header compression to reduce overhead</li>
+<li>allows servers to “push” responses proactively into client caches</li>
+</ul>
+<p>$ nslookup gateway.push.apple.com</p>
+<h2 id="2018-01-19"><a href="#2018-01-19" class="headerlink" title="2018/01/19"></a>2018/01/19</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># order by date:</span><br><span class="line">$ ls -als</span><br></pre></td></tr></table></figure>
+<p>Apache config:</p>
+<ul>
+<li>DocumentRoot has root configuaration in global httpd.conf</li>
+<li>VirtualHost DocumentRoot must under DocumentRoot directory defined in httpd.conf</li>
+<li>Using Alias can map specific context to some directory under DocumentRoot</li>
+<li>Static files hosting can coexist with reverse proxy in the same config</li>
+<li>http config using 80 port, https config using 443 port</li>
+</ul>
+<h2 id="2018-01-23"><a href="#2018-01-23" class="headerlink" title="2018/01/23"></a>2018/01/23</h2><p>using nohup &amp; exit to keep program running in background</p>
+<p>$ nohup ./start.sh &amp;<br>$ exit</p>
+<h2 id="2018-01-26"><a href="#2018-01-26" class="headerlink" title="2018/01/26"></a>2018/01/26</h2><ul>
+<li>RESOLVE git problem while pushing: shallow update not allowed</li>
+</ul>
+<p>As it seems you have used git clone –depth <number> to clone your local version.<br>This results in a shallow clone. One limitation of such a clone is that you can’t push from it into a new repository.</number></p>
+<p>This means that you have to unshallow your repository.<br>To do so you will need to add your old remote again.</p>
+<p>$ git remote add old <path-to-old-remote><br>$ git fetch –unshallow old</path-to-old-remote></p>
+<p>And now you should be able to push into your new remote repository.</p>
+<h2 id="2018-01-28"><a href="#2018-01-28" class="headerlink" title="2018/01/28"></a>2018/01/28</h2><ul>
+<li>understanding save() and restore() for the canvas context</li>
+</ul>
+<p>context.save() pushes the current state onto the stack,<br>context.restore() pops the top state one the stack, restoring the context to that state.</p>
+<p>save and restore can be used as a solution to a wide variety of situations.<br>one of the most common uses is for transformations.</p>
+<ul>
+<li>javascript Array.slice() vs Array.splice()</li>
+</ul>
+<p>slice get the children of array, whereas splice change the children of array</p>
+<p>splice example:</p>
+<p>// remove first<br>this.drawWords.splice(0,1)<br>// insert to the first<br>reorderedArray.splice(0, 0, uDiscover)</p>
+<h2 id="2018-02-01"><a href="#2018-02-01" class="headerlink" title="2018/02/01"></a>2018/02/01</h2><ul>
+<li>javascript string to lower case:</li>
+</ul>
+<p>str.toLowerCase()</p>
+<h2 id="2018-02-06"><a href="#2018-02-06" class="headerlink" title="2018/02/06"></a>2018/02/06</h2><p>official doc:<br><a href="https://facebook.github.io/react/docs/reusable-components.html#es6-classes" target="_blank" rel="noopener">https://facebook.github.io/react/docs/reusable-components.html#es6-classes</a></p>
+<p>blog:<br><a href="http://cheng.logdown.com/posts/2015/09/29/converting-es5-react-to-es6" target="_blank" rel="noopener">http://cheng.logdown.com/posts/2015/09/29/converting-es5-react-to-es6</a></p>
+<p>difference between constructor and getInitialState in reactjs</p>
+<p>ES6 classe:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">class MyComponent extends React.Component &#123;</span><br><span class="line">  constructor(props) &#123;</span><br><span class="line">    super(props);</span><br><span class="line">    this.state = &#123;  &#125;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>is equivalent to ES5:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var MyComponent = React.createClass(&#123;</span><br><span class="line">  getInitialState() &#123;</span><br><span class="line">     &lt;!-- initial state  --&gt;</span><br><span class="line">    return &#123;  &#125;;</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>ES6 The Spread Operator</li>
+</ul>
+<p>…xx : expands an array into individual parameters when using the dots in a function call</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">let attr = &#123;a: 1, b: 2, c: 3&#125;;</span><br><span class="line">let props = &#123;d: 4, ...attr&#125;;</span><br><span class="line">console.log(props);</span><br><span class="line"></span><br><span class="line">&#123;a: 1, b: 2, c: 3, d:4&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="2018-02-23"><a href="#2018-02-23" class="headerlink" title="2018/02/23"></a>2018/02/23</h2><p><a href="http://bluebirdjs.com/docs/getting-started.html" target="_blank" rel="noopener">http://bluebirdjs.com/docs/getting-started.html</a></p>
+<p>bluebird</p>
+<h2 id="2018-03-10"><a href="#2018-03-10" class="headerlink" title="2018/03/10"></a>2018/03/10</h2><ul>
+<li>Pug, originally jade lang</li>
+</ul>
+<p><a href="https://github.com/pugjs/pug" target="_blank" rel="noopener">https://github.com/pugjs/pug</a></p>
+<ul>
+<li>javascript string trim from end</li>
+</ul>
+<p>var str = “12345.00”;<br>str = str.substring(0, str.length - 1); // “12345.0”</p>
+<p>This is the accepted answer, but as per the conversations below,<br>the slice syntax is much clearer:</p>
+<p>var str = “12345.00”;<br>str = str.slice(0, -1); // “12345.0”</p>
+<h2 id="…-1"><a href="#…-1" class="headerlink" title="…"></a>…</h2><h2 id="…-2"><a href="#…-2" class="headerlink" title="…"></a>…</h2><h2 id="…-3"><a href="#…-3" class="headerlink" title="…"></a>…</h2><h2 id="…-4"><a href="#…-4" class="headerlink" title="…"></a>…</h2><h2 id="…-5"><a href="#…-5" class="headerlink" title="…"></a>…</h2></div></article></div></main><footer><div class="paginator"></div><div class="copyright"><p>© 2018 <a href="https://lwz7512.github.io">Li Wenzhi</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>
