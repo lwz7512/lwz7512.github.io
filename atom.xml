@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lwz7512.github.io/"/>
-  <updated>2018-03-09T06:26:31.000Z</updated>
+  <updated>2018-03-23T03:27:51.000Z</updated>
   <id>https://lwz7512.github.io/</id>
   
   <author>
@@ -17,19 +17,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://lwz7512.github.io/2016/05/26/hello-world/"/>
-    <id>https://lwz7512.github.io/2016/05/26/hello-world/</id>
-    <published>2016-05-25T22:00:00.000Z</published>
-    <updated>2018-03-09T06:26:31.000Z</updated>
+    <title>Finally I am here</title>
+    <link href="https://lwz7512.github.io/2018/03/23/Finally-I-am-here/"/>
+    <id>https://lwz7512.github.io/2018/03/23/Finally-I-am-here/</id>
+    <published>2018-03-23T02:34:03.000Z</published>
+    <updated>2018-03-23T03:27:51.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>It’s been a long time not writing something formal, especially when I went through the failure of my first startup. After years of re-adjusting in job and family, now I moved to a new city with family members and started a new life. In order to keep me make daily progress in technical and english, I setup this hexo blog, and decide to record something useful everyday.</p><p>I believe that I have much to learn in my field(Front-end/Mobile App Dev), even working on these stuff for more than 10 years, there still remains much new untouched. By reviewing the works/projects of past couples of years, I found that It’s too miserable, no success, no proud, no value…</p><p>This year, 2018, keep learning , writing, participating community, doing something valuable stuff, even tiny. Forget those nonsense and bullshit politics, focus on my mission, go, now!</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        &lt;p&gt;It’s been a long time not writing something formal, especially when I went through the failure of my first startup. After years of re-adj
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://lwz7512.github.io/2016/05/26/hello-world/"/>
+    <id>https://lwz7512.github.io/2016/05/26/hello-world/</id>
+    <published>2016-05-25T22:00:00.000Z</published>
+    <updated>2018-03-23T02:44:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Prepare to launch…</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Prepare to launch…&lt;/p&gt;
+
       
     
     </summary>
