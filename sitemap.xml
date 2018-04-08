@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lwz7512.github.io/2018/04/08/running-react-native-app-in-browser/</loc>
+    
+    <lastmod>2018-04-08T14:57:46.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lwz7512.github.io/2018/04/06/stuck-at-Starting-packager/</loc>
     
     <lastmod>2018-04-07T15:33:35.000Z</lastmod>
