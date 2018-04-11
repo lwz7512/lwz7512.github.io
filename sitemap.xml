@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lwz7512.github.io/2018/04/11/Understand-Reactjs-and-Redux-step-1/</loc>
+    
+    <lastmod>2018-04-11T16:04:34.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lwz7512.github.io/2018/04/08/running-react-native-app-in-browser/</loc>
     
     <lastmod>2018-04-08T14:57:46.000Z</lastmod>

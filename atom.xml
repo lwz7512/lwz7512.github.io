@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lwz7512.github.io/"/>
-  <updated>2018-04-08T14:57:46.000Z</updated>
+  <updated>2018-04-11T16:04:34.000Z</updated>
   <id>https://lwz7512.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Understand Reactjs and Redux - step 1</title>
+    <link href="https://lwz7512.github.io/2018/04/11/Understand-Reactjs-and-Redux-step-1/"/>
+    <id>https://lwz7512.github.io/2018/04/11/Understand-Reactjs-and-Redux-step-1/</id>
+    <published>2018-04-11T15:01:47.000Z</published>
+    <updated>2018-04-11T16:04:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h3><p>Learning curve of reacjs &amp; redux is absolutely steep, event for me, a senior front end programmar with years of experience. After a number of days of reading related official docs and examples officially recommended, I still feel frustrated and confused about those of conscepts and thoughts.</p><p>Then I met the minimal redux and even more simpler project to show how it could be. That helped me a lot to understand the usages and working flow in it.</p><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul><li><p><a href="https://redux-minimal.js.org/" target="_blank" rel="noopener">Minimal redux</a></p></li><li><p><a href="http://blog.tylerbuchea.com/super-simple-react-redux-application-example/" target="_blank" rel="noopener">Super Simple React Redux Example</a></p></li></ul><p>as well as the forked version of Super Simple React Redux Example, added with my comments in each function/concept.</p><ul><li><a href="https://github.com/lwz7512/my-simple-app" target="_blank" rel="noopener">My Simple React &amp; Redux App</a></li></ul><h3 id="Snipets"><a href="#Snipets" class="headerlink" title="Snipets"></a>Snipets</h3><p>The most mysterious part in reactjs-redux for me is how do ACTION &amp; REDUCER cooperate to produce STATE &amp; PROPS change. So, I manage to figure something out there:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// AppContainer.js</span><br><span class="line">// reducer -&gt; state -&gt; props</span><br><span class="line">const mapStateToProps = (state, ownProps) =&gt; &#123;</span><br><span class="line">  console.log(state);</span><br><span class="line">  // set geodP used in template above</span><br><span class="line">  return &#123;geodP: state.geodR&#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><p>this mapStateToProps function is common in redux, it accepts the state transfered from reducer function and produce the props object needed by ui element.</p><p>I modified the varaibles names, for example:</p><ul><li>Prop suffixed by capital character P.</li><li>state value suffixed by capital character R means it is from reducers.</li></ul><p>May be these are meaningless for a skilled reactjs coder, but currently it helped me to clearly identify the category of each stuff.</p><p>then another question came, where is the geodR in state from?</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// redux.js</span><br><span class="line">// state producer &amp; exposer</span><br><span class="line">export const reducers = combineReducers(&#123;</span><br><span class="line">  // original: not easy to understand for beginner</span><br><span class="line">  // geod,</span><br><span class="line"></span><br><span class="line">  // redefined: expose geodR property for state using _geodR</span><br><span class="line">  geodR: _geodR,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>The anwser lies in reducers! It added a property called geodR to state and calculated the value by underscore prefixed geodR function for inner use. I believe this refactor is readability is better than the original version.</p><p>More understanding and clarification in code practice comming soon…</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Background&quot;&gt;&lt;a href=&quot;#Background&quot; class=&quot;headerlink&quot; title=&quot;Background&quot;&gt;&lt;/a&gt;Background&lt;/h3&gt;&lt;p&gt;Learning curve of reacjs &amp;amp; redux i
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>running react-native app in browser</title>
