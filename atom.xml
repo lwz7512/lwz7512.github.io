@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lwz7512.github.io/"/>
-  <updated>2018-04-17T03:55:01.000Z</updated>
+  <updated>2018-04-29T12:04:33.000Z</updated>
   <id>https://lwz7512.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Add custom font to react native project</title>
+    <link href="https://lwz7512.github.io/2018/04/29/Add-custom-font-to-react-native-project/"/>
+    <id>https://lwz7512.github.io/2018/04/29/Add-custom-font-to-react-native-project/</id>
+    <published>2018-04-29T10:23:50.000Z</published>
+    <updated>2018-04-29T12:04:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h3><p>In a recent RN project I’m working on, I need to display a handwriting chinese text in each card. But the default font library can not meet this demand, then, I searched a lot of reference and successfully completed it. It may look like complex, but the key steps are just a few, no much additional tricky parts!</p><h3 id="Snippets"><a href="#Snippets" class="headerlink" title="Snippets"></a>Snippets</h3><p>Here, My sole mission is to install a font file named <strong> ‘SentyMARUKO.ttf’ </strong> to my project.</p><p><img src="/img/SentyMARUKO.png" alt=""></p><p>to test the rightness, add the style definition:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">bigText: &#123;</span><br><span class="line">    color: &apos;#FFFFFF&apos;,</span><br><span class="line">    fontSize: 64,</span><br><span class="line">    fontFamily: &apos;SentyMARUKO&apos;,</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure><p>then begin to change RN project:</p><ul><li>Step 1</li></ul><p>make a folder named ‘fonts’ in project-root/app, to hold the SentyMARUKO.ttf</p><ul><li>Step 2</li></ul><p>add below json snippt to package.json file:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;rnpm&quot;: &#123;</span><br><span class="line">    &quot;assets&quot;: [&quot;./app/fonts&quot;]</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure><ul><li>Step 3</li></ul><p>before run link command to install assets to ios/android project, install global rnpm first:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install rnpm -g</span><br><span class="line">$ rnpm link</span><br></pre></td></tr></table></figure><p>is it done? press CMD+r to see what’ll happen….</p><p><img src="/img/unrecognized_font.png" alt=""></p><p>Apparently not finished yet! The font resource installed to project but NOT automaticlly compiled to the running app. So, <strong> Unrecognized font family …</strong> error reported!</p><ul><li>Step 4</li></ul><p>recomplie the project by running:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ react-native run-ios</span><br></pre></td></tr></table></figure><p>Note:</p><blockquote><p>KEEP dev server running background, do NOT close the console</p></blockquote><p>this step ends up finishing the whole process of adding custom font to react native project.</p><p>Text with ‘SentyMARUKO’ font like this:</p><p><img src="/img/note4kids_kong.png" alt=""></p><p>Compared with the original default Text font, look like much better?</p><p><img src="/img/kong_default.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Background&quot;&gt;&lt;a href=&quot;#Background&quot; class=&quot;headerlink&quot; title=&quot;Background&quot;&gt;&lt;/a&gt;Background&lt;/h3&gt;&lt;p&gt;In a recent RN project I’m working on,
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Adding Redux to react-native project Part 2</title>
