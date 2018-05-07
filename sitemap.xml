@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lwz7512.github.io/2018/05/07/Refactoring-reducer-function-to-remove-switch-and-case-flow/</loc>
+    
+    <lastmod>2018-05-07T09:04:13.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lwz7512.github.io/2018/05/04/Create-form-with-tcomb-form-native/</loc>
     
     <lastmod>2018-05-04T15:33:08.000Z</lastmod>
