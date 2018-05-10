@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lwz7512.github.io/2018/05/10/Rebuild-an-ionic-based-git-repository/</loc>
+    
+    <lastmod>2018-05-10T10:05:19.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lwz7512.github.io/2018/04/15/Adding-Redux-to-react-native-project-Part-1/</loc>
+    
+    <lastmod>2018-05-09T14:53:19.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lwz7512.github.io/2018/05/09/The-right-way-to-run-react-native-audio-example-successfully/</loc>
     
     <lastmod>2018-05-09T04:16:26.000Z</lastmod>
@@ -33,13 +47,6 @@
     <loc>https://lwz7512.github.io/2018/04/17/Adding-Redux-to-react-native-project-Part-2/</loc>
     
     <lastmod>2018-04-17T03:55:01.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lwz7512.github.io/2018/04/15/Adding-Redux-to-react-native-project-Part-1/</loc>
-    
-    <lastmod>2018-04-15T14:56:44.000Z</lastmod>
     
   </url>
   
