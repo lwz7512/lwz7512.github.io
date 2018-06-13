@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lwz7512.github.io/"/>
-  <updated>2018-05-10T10:05:19.000Z</updated>
+  <updated>2018-06-13T17:01:40.000Z</updated>
   <id>https://lwz7512.github.io/</id>
   
   <author>
@@ -17,13 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>My First RNA AwesomeNote4Kids Released!</title>
+    <link href="https://lwz7512.github.io/2018/06/14/My-First-RNA-AwesomeNote4Kids-Released/"/>
+    <id>https://lwz7512.github.io/2018/06/14/My-First-RNA-AwesomeNote4Kids-Released/</id>
+    <published>2018-06-13T16:51:14.000Z</published>
+    <updated>2018-06-13T17:01:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Long time no writing something, for I’m crazy in immigration application…</p><p>Finally, the first phase applying materails has been submitted at 8 Jun. After couples days redeveloping my first react-native app, AwesomeNote4Kids, released at last today!</p><h3 id="repository-address"><a href="#repository-address" class="headerlink" title="repository address"></a>repository address</h3><p><a href="https://github.com/lwz7512/AwesomeNote4Kids" target="_blank" rel="noopener">https://github.com/lwz7512/AwesomeNote4Kids</a></p><h3 id="screenshots"><a href="#screenshots" class="headerlink" title="screenshots"></a>screenshots</h3><p><img src="/img/screenshots.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Long time no writing something, for I’m crazy in immigration application…&lt;/p&gt;
+&lt;p&gt;Finally, the first phase applying materails has been sub
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Rebuild an ionic based git repository</title>
     <link href="https://lwz7512.github.io/2018/05/10/Rebuild-an-ionic-based-git-repository/"/>
     <id>https://lwz7512.github.io/2018/05/10/Rebuild-an-ionic-based-git-repository/</id>
     <published>2018-05-10T06:41:35.000Z</published>
-    <updated>2018-05-10T10:05:19.000Z</updated>
+    <updated>2018-05-10T11:56:10.000Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h3><p>Yesterday my colleague submitted an ionic project to github, my task is to use the repository to package a Android &amp; ios installation file.  But after I cloned the repository, running <code>cordova prepare</code> in console, it reported:</p><blockquote><p>Error: Current working directory is not a Cordova-based project.</p></blockquote><p>what?</p><p>I searched many results and tried the solutions, but still the same error! I had to figure out what’s the difference of this repository and the blank new ionic2 project.</p><h3 id="Snippets"><a href="#Snippets" class="headerlink" title="Snippets"></a>Snippets</h3><p>to create a blank new ionic2 project, run:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ionic start blanknewio2 --v2 --ts</span><br></pre></td></tr></table></figure><p>Compared with the local blank new ionic2 project, a <code>www</code> directory not existed in cloned project:</p><p><img src="/img/ionic2.png" alt=""></p><p>The answer is clear now, www directory is ignored and not committed! By checking the <code>.gitignore</code> file in both projects, <code>www/</code> is included in without any unexpected.</p><p>So, mannually create a www directory then rerun the installation commands:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir www</span><br><span class="line">$ cordova prepare</span><br><span class="line">$ npm i</span><br></pre></td></tr></table></figure><p>now, it’s ready to build ionic app source to each platform :</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ionic build android --prod</span><br><span class="line">$ ionic build ios --prod</span><br></pre></td></tr></table></figure><p>DONE!</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h3><p>Yesterday my colleague submitted an ionic project to github, my task is to use the repository to package a Android &amp; ios installation file.  But after I cloned the repository, running <code>cordova prepare</code> in console, it reported:</p><blockquote><p>Error: Current working directory is not a Cordova-based project.</p></blockquote><p>what?</p><p>I searched many results and tried the solutions, but still the same error! I had to figure out what’s the difference of this repository and the blank new ionic2 project.</p><h3 id="Snippets"><a href="#Snippets" class="headerlink" title="Snippets"></a>Snippets</h3><p>to create a blank new ionic2 project, run:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ionic start blanknewio2 --v2 --ts</span><br></pre></td></tr></table></figure><p>Compared with the local blank new ionic2 project, cloned project missed a <code>www</code> directory:</p><p><img src="/img/ionic2.png" alt=""></p><p>The answer is clear now, www directory is ignored and not committed! By checking the <code>.gitignore</code> file in both projects, <code>www/</code> is included in without any unexpected.</p><p>So, mannually create a www directory then rerun the installation commands:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir www</span><br><span class="line">$ cordova prepare</span><br><span class="line">$ npm i</span><br></pre></td></tr></table></figure><p>now, it’s ready to build ionic app source to each platform :</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ionic build android --prod</span><br><span class="line">$ ionic build ios --prod</span><br></pre></td></tr></table></figure><p>DONE!</p>]]></content>
     
     <summary type="html">
     
